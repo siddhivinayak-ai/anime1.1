@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Stream</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h1 class="app-name">Vamshi Stream</h1>
+    <i class="search-icon material-icons">search</i>
+  </header>
+
+
+
+
+ 
+<!-- 
+  <section class="banner" id="banner">
+    <video class="banner-video" id="banner-video" autoplay muted loop playsinline>
+      <source id="banner-trailer" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="banner-overlay">
+      <div class="banner-content">
+        <h2 id="banner-title">Loading...</h2>
+        <p id="banner-description"></p>
+        <div class="banner-buttons">
+          <button class="watch-now">Watch Now</button>
+          <button class="add-watchlist">Add to Watchlist</button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section class="banner" id="banner">
+    <div class="banner-overlay">
+      <div class="banner-content">
+        <h2 id="banner-title">Loading...</h2>
+        <p id="banner-description"></p>
+        <div class="banner-buttons">
+          <button class="watch-now">Watch Now</button>
+          <button class="add-watchlist">Add to Watchlist</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+
+
+  <!-- Anime Sections -->
+  <section class="anime-section">
+    <h2>Top Anime</h2>
+    <div class="anime-container" id="top-anime"></div>
+  </section>
+
+  <section class="anime-section">
+    <h2>Upcoming Anime</h2>
+    <div class="anime-container" id="upcoming-anime"></div>
+  </section>
+  <section class="anime-section">
+    <h2>Anime Movies</h2>
+    <div class="anime-container" id="anime-movies"></div>
+  </section>
+  <section class="anime-section">
+    <h2>Trending Anime</h2>
+    <div class="anime-container" id="trending-anime"></div>
+  </section>
+
+  <div class="anime-section">
+    <h2>Popular Anime by Genre</h2>
+    <select id="genre-select">
+      <option value="Action">Action</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Romance">Romance</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Drama">Drama</option>
+    </select>
+    <div id="popular-genre-anime" class="anime-container"></div>
+  </div>
+  
+
+
+ 
+
+
+
+  <!-- Bottom Navigation -->
+  <footer class="bottom-nav">
+    <i class="material-icons">home</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">account_circle</i>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

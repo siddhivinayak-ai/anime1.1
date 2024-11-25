@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #101016;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1a1a2e;
+  
+}
+
+.app-name {
+  font-size: 22px;
+  color: #e0e0ff;
+  font-weight: bold;
+}
+
+.search-icon {
+  font-size: 24px;
+  color: #e0e0ff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* 
+.banner {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+  z-index: 2;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.banner-buttons {
+  margin-top: 10px;
+}
+
+.banner-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #5a5adc;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.banner-buttons button:hover {
+  background: #4a4ad1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Updated Banner Styles */
+.banner {
+  position: relative;
+  height: 450px; /* Adjust height as needed */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out; /* Smooth transition effect for sliding images */
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-content h2 {
+  padding-top: 20%;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.banner-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.banner-buttons {
+  margin-top: 10px;
+}
+
+.banner-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #E50914;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.banner-buttons button:hover {
+  background: #af040d;
+  transform: scale(1.05); /* Adds a slight zoom effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.anime-section {
+  margin: 20px 10px;
+}
+
+.anime-section h2 {
+  font-size: 1.6rem;
+  color: #d1d1ff;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.anime-container {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.anime-container::-webkit-scrollbar {
+  height: 6px;
+  background: #252545;
+}
+
+.anime-container::-webkit-scrollbar-thumb {
+  background: #5a5adc;
+  border-radius: 10px;
+}
+
+.anime-card {
+  flex: 0 0 auto;
+  width: 160px;
+  text-align: center;
+  background-color: #1e1e30;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  scroll-snap-align: start;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 2px solid #5a5adc;
+}
+
+.anime-card p {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.anime-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#genre-select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5a5adc;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  margin: 15px auto;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .banner{
+    margin-top: 2%;
+    height: 250px;
+  }
+ 
+  .banner-content h2 {
+    padding-top: 20%;
+    font-size: 1.2rem;
+
+  }
+
+  .banner-content p {
+    font-size: 0.8rem;
+   
+  }
+  
+  .banner-buttons {
+    margin-top: 8px;
+  }
+
+
+  .banner-buttons button {
+    margin: 0 10px;
+    padding: 8px 14px;
+    border: none;
+    background: #E50914;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    /* font-weight: ; */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  
+
+
+  .anime-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .anime-container {
+    gap: 8px;
+    padding: 5px;
+  }
+
+  .anime-card {
+    width: 130px;
+  }
+
+  .anime-card img {
+    height: 190px;
+  }
+
+  #genre-select {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .anime-container {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .anime-card {
+    width: 140px;
+  }
+
+  .anime-card img {
+    height: 200px;
+  }
+
+  #genre-select {
+    font-size: 15px;
+    padding: 9px;
+  }
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1a2e;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.bottom-nav a {
+  color: #e0e0ff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.bottom-nav a:hover {
+  color: #5a5adc;
+}
